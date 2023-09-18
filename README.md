@@ -7,6 +7,10 @@
 
 #TabTask #JavaScript
 
+
+
+## let nums = [2, 7, 11, 15];
+
 let nums = [2, 7, 11, 15];
 
 function solution(nums) {
@@ -16,6 +20,7 @@ function solution(nums) {
     for (let j = 1; j < nums.length; j++) {
       if (nums[i] + nums[j] === target) {
         newArr = [nums[i], nums[j]];
+        console.log([i,j])
         console.log(newArr);
         return;
       }
@@ -25,4 +30,3 @@ function solution(nums) {
 }
 
 solution(nums);
-
