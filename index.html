@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Poppins:ital,wght@0,200;0,400;1,200&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Tap Task</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div></div>
+        <div class="nav-links">
+          <ul>
+            <li>
+              <a href="#home"
+                ><span><i class="fa-solid fa-house"></i></span>Home</a
+              >
+            </li>
+            <li>
+              <a href="#about-me"
+                ><span><i class="fa-solid fa-user"></i></span> About Me</a
+              >
+            </li>
+            <li>
+              <a href="#contact"
+                ><span><i class="fa-solid fa-phone"></i></span>Contact Me</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bar-icon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+    <!--Hero section start from here-->
+    <main class="main">
+      <div class="container">
+        <section class="portfolio-text">
+          <div class="header-first-p">
+            <p>Welcome to my site</p>
+          </div>
+          <div class="header-first-h1">
+            <h1>Hi,I'm sohib abed, and I'm Front End <span>ReactJS</span></h1>
+          </div>
+          <div class="header-paragraph">
+            <p>
+              I'm focused on developed ui for website, and create amazing
+              featured, in addition, I'm try to improve my skills by clone
+              website and solve problem. also I'm try to build network on
+              linkedin and other platform.<a href="#"><span>see more</span></a>
+            </p>
+          </div>
+          <div class="header-button">
+            <button>Hire me !</button>
+            <button>See my Project</button>
+          </div>
+        </section>
+        <section class="portfolio-images">
+          <div class="boxes">
+            <div class="box"></div>
+            <div class="box-two"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script>
+      const humbergerMenu = document.querySelector(".bar-icon");
+      const navLinks = document.querySelector(".nav-links");
+
+      humbergerMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("mobile-menu");
+      });
+    </script>
+  </body>
+</html>
