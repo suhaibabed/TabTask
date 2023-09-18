@@ -100,6 +100,7 @@ body {
 .portfolio-text .header-first-p {
   display: flex;
   align-items: center;
+  margin-bottom: 19px;
 }
 .main .header-first-h1 {
   display: flex;
@@ -109,6 +110,7 @@ body {
   font-size: 40px;
   color: var(--subMainColor);
   text-align: left;
+  margin-bottom: 30px;
 }
 .main .header-first-h1 h1 span {
   color: var(--mainColor);
@@ -138,6 +140,7 @@ body {
   align-items: center;
   justify-content: start;
   margin-left: -12px;
+  margin-top: 20px;
 }
 .main .header-button button {
   width: 106px;
@@ -164,9 +167,9 @@ body {
 .portfolio-images {
   width: 50%;
   display: flex;
-  /* flex-direction: column-reverse; */
+  flex-direction: column;
   align-items: flex-end;
-  padding: 20px;
+  position: relative;
   box-sizing: border-box;
 }
 .portfolio-images .boxes {
@@ -175,8 +178,8 @@ body {
   justify-content: center;
 }
 .portfolio-images .box {
-  width: 222px;
-  height: 249px;
+  width: 274px;
+  height: 279px;
   background-color: var(--secondColor);
   position: absolute;
   display: flex;
@@ -184,12 +187,12 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 0 0 0 9.9rem;
-  top: 33%;
-  right: 11%;
+  top: 17%;
+  right: -4%;
 }
 .portfolio-images .box-two {
-  width: 225px;
-  height: 267px;
+  width: 264px;
+  height: 300px;
   background-image: url(/assets/portfolio.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -199,8 +202,8 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 0 0 0 10rem;
-  right: 9.9%;
-  top: 31%;
+  right: -4.1%;
+  top: 10%;
 }
 
 @media (max-width: 900px) {
@@ -239,17 +242,22 @@ body {
   }
   .main .container {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-
+  .main .portfolio-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
   .portfolio-text .header-first-p {
     display: flex;
     align-items: center;
     margin-bottom: 13px;
   }
   .portfolio-text .header-first-p p {
-    font-size: 16px;
+    font-size: 33px;
+    text-align: left;
   }
   .main .header-first-h1 {
     display: flex;
@@ -258,7 +266,7 @@ body {
     margin-bottom: 15px;
   }
   .main .header-first-h1 h1 {
-    font-size: 16px;
+    font-size: 27px;
     text-align: left;
   }
   .main .header-paragraph {
@@ -266,9 +274,9 @@ body {
     margin-top: 15px;
   }
   .main .header-paragraph p {
-    font-size: 16px;
-    margin-left: 0;
+    font-size: 17px;
     text-align: left;
+    margin-top: -37px;
   }
 
   .main .header-paragraph p a {
@@ -278,15 +286,81 @@ body {
   .main .header-button {
     display: flex;
     flex-direction: column-reverse;
+    align-items: flex-start;
   }
-
+  .portfolio-images {
+    display: flex;
+    align-items: center;
+    margin-left: -83px;
+  }
   .portfolio-images .box {
+    width: 272px;
+    height: 275;
+    top: 14%;
+    right: -4%;
+    display: flex;
+    align-items: self-start;
   }
   .portfolio-images .box-two {
+    display: flex;
+    align-items: self-start;
   }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 576px) {
+  .main .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -4rem;
+  }
+  .main .portfolio-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .portfolio-text .header-first-p {
+    display: flex;
+    align-items: center;
+  }
+  .portfolio-text .header-first-p p {
+    font-size: 23px;
+    text-align: center;
+  }
+  .main .header-first-h1 {
+    display: flex;
+    align-items: center;
+  }
+  .main .header-first-h1 h1 {
+    font-size: 24px;
+    text-align: left;
+  }
+  .main .header-paragraph {
+    display: flex;
+    align-items: center;
+  }
+  .main .header-paragraph p {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .main .header-button {
+    display: flex;
+    align-items: flex-start;
+  }
+  .main .portfolio-images {
+    display: flex;
+    align-items: center;
+    margin-right: -48%;
+    margin-top: 23px;
+    position: relative;
+  }
+}
+@media (min-width: 900px) {
   .container {
     width: 970px;
   }
